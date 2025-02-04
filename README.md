@@ -1,11 +1,11 @@
-# catalan-sta-ai-absa-zzz-demo
+# dfink-test-catalan-absa-demo-template
 
 This is a project created by AEMY.
 
 ## Environments
 
-- Preview: https://main--catalan-sta-ai-absa-zzz-demo--aemdemos.aem.page/
-- Live: https://main--catalan-sta-ai-absa-zzz-demo--aemdemos.aem.live/
+- Preview: https://main--dfink-test-catalan-absa-demo-template--aemdemos.aem.page/
+- Live: https://main--dfink-test-catalan-absa-demo-template--aemdemos.aem.live/
 
 ## Installation
 
@@ -23,4 +23,4 @@ npm run lint
 
 1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
 1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000/`)
-1. Open the `catalan-sta-ai-absa-zzz-demo` directory in your favorite IDE and start coding :)
+1. Open the `dfink-test-catalan-absa-demo-template` directory in your favorite IDE and start coding :)

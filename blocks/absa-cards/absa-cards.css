@@ -1,0 +1,75 @@
+
+.absa-cards-wrapper > .absa-cards > ul {
+  display: flex; /* Use flexbox for horizontal alignment */
+  flex-direction: row; /* Ensure items are side by side */
+  justify-content: space-between; /* Ensure even spacing between items */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+}
+
+.absa-cards-wrapper > .absa-cards > ul > li {
+  flex: 1; /* Make each item take equal space */
+  margin: 0 10px; /* Add margin between items */
+  display: flex;
+  flex-direction: column; /* Stack inner elements vertically */
+  align-items: flex-start; /* Ensure items align to the start */
+  border: none; /* Remove border */
+  background-color: transparent; /* Set background to transparent */
+}
+
+.absa-cards-wrapper > .absa-cards .absa-cards-card-image {
+  width: 100%; /* Ensure the image container takes full width */
+}
+
+.absa-cards-wrapper > .absa-cards .absa-cards-card-image img {
+  width: 100%; /* Ensure images are responsive */
+  height: auto;
+  display: block;
+}
+
+.absa-cards-wrapper > .absa-cards .absa-cards-card-body {
+  width: 100%; /* Ensure body takes full width */
+  margin-top: 15px; /* Increase space between image and text */
+  text-align: left; /* Ensure text is aligned to the left */
+  margin: 0; /* Remove additional margin */
+}
+
+.absa-cards-wrapper > .absa-cards .absa-cards-card-body h5 {
+  font-size: 1.2em; /* Adjust the font size */
+  margin: 0 0 15px; /* Increase space below the title */
+}
+
+.absa-cards-wrapper > .absa-cards .absa-cards-card-body .button-container {
+  text-align: left; /* Ensure button is aligned to the left */
+  margin: 0; /* Remove additional margin */
+}
+
+.absa-cards-wrapper > .absa-cards .absa-cards-card-body .button {
+  color: red; /* Style the call to action link */
+  background-color: transparent; /* Remove background color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  position: relative;
+  padding-right: 20px; /* Adjust padding for arrow */
+}
+
+.absa-cards-wrapper > .absa-cards .absa-cards-card-body .button::after {
+  content: '→'; /* Add right-pointing arrow */
+  color: red;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .absa-cards-wrapper > .absa-cards > ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .absa-cards-wrapper > .absa-cards > ul > li {
+    max-width: 100%; /* Remove max-width restriction for smaller screens */
+    margin: 10px 0; /* Add vertical margin between items */
+  }
+}
